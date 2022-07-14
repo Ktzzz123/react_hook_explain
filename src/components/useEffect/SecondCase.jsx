@@ -6,7 +6,7 @@ function SecondCase() {
     const [data2, setData2] = useState('');
     const [count2, setCount2]= useState(0);
     const [title, setTitle]= useState('');
-    let firstData = 'render 1 time'
+
 
 
     useEffect(() => {

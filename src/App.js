@@ -3,6 +3,7 @@ import EuseEffect from './components/EuseEffect';
 import EuseReducer from './components/EuseReducer';
 import EuseState from './components/EuseState';
 import EuseRef from './components/EuseRef';
+import EuseLayoutEffect from './components/EuseLayoutEffect'
 
 function App() {
   
@@ -13,7 +14,8 @@ function App() {
         {/* <EuseState/> */}
         {/* <EuseReducer/> */}
         {/* <EuseEffect /> */}
-        <EuseRef/>
+        {/* <EuseRef/> */}
+        <EuseLayoutEffect/>
       </header>
     </div>
   );
