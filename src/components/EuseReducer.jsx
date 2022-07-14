@@ -29,7 +29,7 @@ export default function EuseReducer() {
 
             </h1>
             <text>
-                -have the same use like useState, page will re-render when the variable was declare by useReducer change value.
+                -have the same purpose like useState, page will re-render when the variable was declare by useReducer change value.
                 <br/>
                 -use when dev take change 2 or more state variable in the same action, descrease number render of web.
             </text>
