@@ -1,30 +1,26 @@
-import React,{useEffect, useState} from 'react';
-import axios from 'axios';
-
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
+import FirstCase from './useEffect/FirstCase';
+import SecondCase from './useEffect/SecondCase';
+import ThirtCase from './useEffect/ThirtCase';
+// import useStyles from './css/styles'
 
 
 function EuseEffect() {
-  const [data,setData] = useState("");
+    // const classes = useStyles;
+    // console.log('EuseEffect')
 
-   
-    let firstData = "render 1 time";
 
-    useEffect(()=>{
-        axios
-        .get("https://jsonplaceholder.typicode.com/comments")
-        .then(function (response) {
-            setData(response.data[0].email)
-        });
-        console.log('API was called')
-    },[])
-    {console.log(firstData)}
+    let firstData = 'render 1 time'
+
+  
     return (
         <div>
-            <h1>{firstData}</h1>
-
-            {data}
+            <FirstCase/>
+            <SecondCase/>
+            <ThirtCase/>
         </div>
-    );
+    )
 }
 
-export default EuseEffect;
+export default EuseEffect
