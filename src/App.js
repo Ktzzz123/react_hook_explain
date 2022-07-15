@@ -17,8 +17,8 @@ function App() {
       {/* <Home/> */}
       
 
-    <EuseImperativeHangdle/>
-    {/* <EuseContext/> */}
+    {/* <EuseImperativeHangdle/> */}
+    <EuseContext/>
     </div>
   );
 }

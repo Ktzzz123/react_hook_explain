@@ -1,6 +1,9 @@
-import React from 'react';
+import React,{useContext} from 'react';
 
-function User({username}) {
+import {usernameConText} from '../EuseContext'
+function User() {
+
+    const {username} = useContext(usernameConText);
     return (
         <div>
             <h1>User: {username}</h1>
