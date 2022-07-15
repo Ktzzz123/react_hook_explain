@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios'
+import React from 'react'
 import FirstCase from './useEffect/FirstCase';
 import SecondCase from './useEffect/SecondCase';
 import ThirtCase from './useEffect/ThirtCase';
@@ -9,9 +8,6 @@ import ThirtCase from './useEffect/ThirtCase';
 function EuseEffect() {
     // const classes = useStyles;
     // console.log('EuseEffect')
-
-
-    let firstData = 'render 1 time'
 
   
     return (

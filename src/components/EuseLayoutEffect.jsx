@@ -1,4 +1,4 @@
-import React, { Component, useRef, useLayoutEffect, useEffect } from 'react';
+import React, {  useRef, useLayoutEffect, useEffect } from 'react';
 
 function EuseLayoutEffect() {
     const inputRef = useRef(null);
