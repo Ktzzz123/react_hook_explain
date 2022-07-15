@@ -9,6 +9,8 @@ import EuseImperativeHangdle from './components/EuseImperativeHandle'
 
 import {Routes,Route} from "react-router-dom";
 import EuseContext from './components/EuseContext';
+import EuseMemo from './components/EuseMemo';
+import EuseCallback from './components/EuseCallback';
 
 function App() {
   
@@ -18,7 +20,10 @@ function App() {
       
 
     {/* <EuseImperativeHangdle/> */}
-    <EuseContext/>
+    {/* <EuseContext/> */}
+    {/* <EuseMemo/> */}
+    <EuseCallback/>
+
     </div>
   );
 }
