@@ -12,14 +12,13 @@ import {Routes,Route} from "react-router-dom";
 import EuseContext from './components/EuseContext';
 import EuseMemo from './components/EuseMemo';
 import EuseCallback from './components/EuseCallback';
-import NavBar from './pages/NavBar/Navbar';
-import Home from './pages/container/Home';
+import Home from './components/Home.jsx'
 
 function App() {
   
   return (
     <div>
-      <NavBar/>
+      <Home/>
       <Routes>
         <Route path = "/" element = {<Home/>}/>
         <Route path = "/useEffect" element = {<EuseEffect/>}/>
@@ -32,6 +31,12 @@ function App() {
         <Route path = "/useCallback" element = {<EuseCallback/>}/>
         <Route path='/useImperativeHangdle' element ={<EuseImperativeHangdle/>}/>
       </Routes>
+      
+    {/* <EuseImperativeHangdle/> */}
+    {/* <EuseContext/> */}
+    {/* <EuseMemo/> */}
+    {/* <EuseCallback/> */}
+
     </div>
   );
 }

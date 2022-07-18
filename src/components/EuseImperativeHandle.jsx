@@ -1,11 +1,7 @@
 import React,{useEffect, useRef} from 'react';
-import useStyles from './css/styles';
 import SmallButton from './nestedComponent/SmallButton';
 const ref = React.createRef();
-
-
 function EuseImperativeHandle() {
-    const classes = useStyles();
     const buttonRef = useRef(null);
     
 
@@ -21,11 +17,11 @@ function EuseImperativeHandle() {
 
     
     return (
-     <div className={classes.container}>
+     <>
         <div>
             
             <button onClick={()=>{console.log(buttonRef.current)}}>parent button</button>
-            <button onClick={OnClick}>hide/show in parent button</button>
+            <button onClick={OnClick}>hide/show</button>
             
             <SmallButton ref={buttonRef}/>
              
@@ -36,7 +32,7 @@ function EuseImperativeHandle() {
             </text>
          </div>
      
-     </div>
+     </>
     );
 }
 
