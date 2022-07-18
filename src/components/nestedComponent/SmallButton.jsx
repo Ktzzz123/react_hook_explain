@@ -13,7 +13,8 @@ function SmallButton (props,ref) {
 
     return (
         <>
-            {toggle&&<span>Toggle</span>}
+            <button> child button</button>
+            {toggle&&<h2>Toggle</h2>}
         </>
     );
 }

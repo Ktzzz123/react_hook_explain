@@ -12,10 +12,14 @@ function EuseState (){
 
 
     return (
-        <div>
-            {counter}
-            <button onClick={increasement}>increase</button>
-            <text>
+        <div >
+            <div >
+                <h1>
+                    {counter}
+                </h1>
+                <button onClick={increasement} style={{margin:'auto'}}>increase</button>
+            </div>
+            <text >
                 <br/>
                 - let system know that value is state variable. so each time value of that variable change, system must re-render web.
                 <br/>

@@ -1,7 +1,9 @@
 import React,{useReducer} from 'react';
+import useStyles from './css/styles';
 
 
 const reducer = (state,action)=>{
+
     switch (action.type){
         case "increase":
           return (
@@ -16,15 +18,17 @@ const reducer = (state,action)=>{
 
 
 export default function EuseReducer() {
+    const classes = useStyles();
+
     const [state, dispatch] = useReducer(reducer,{count: 0, showtext: true});
 
 
     return (
-        <div>
+        <div className={classes.container}>
             <h1>{state.count}</h1>
             <button onClick={() => dispatch({type: 'increase'})}>incease</button>
             <br/>
-            <h1>
+            <h1>    
             {state.showtext?'this is an even number':'this is an odd number'}
 
             </h1>

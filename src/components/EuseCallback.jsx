@@ -1,10 +1,10 @@
 import React, { useCallback, useState } from 'react';
 import ChildComponent from './nestedComponent/ChildComponent';
+import './css/styles.css'
 
 function EuseCallback() {
 const [toggle, setToggle] = useState(true);
 const [data, setData]= useState('i am data');
-
 
   const returnData = useCallback(()=>
  {
@@ -15,7 +15,7 @@ const [data, setData]= useState('i am data');
 
 
     return (
-        <div>
+        <div className='container'>
             <ChildComponent returnData = {returnData}></ChildComponent>
             <button onClick={()=>{
                 setToggle(!toggle)

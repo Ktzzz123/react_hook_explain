@@ -1,4 +1,5 @@
 import React from 'react'
+import useStyles from './css/styles';
 import FirstCase from './useEffect/FirstCase';
 import SecondCase from './useEffect/SecondCase';
 import ThirtCase from './useEffect/ThirtCase';
@@ -6,12 +7,13 @@ import ThirtCase from './useEffect/ThirtCase';
 
 
 function EuseEffect() {
-    // const classes = useStyles;
+    
+    const classes = useStyles();
     // console.log('EuseEffect')
 
   
     return (
-        <div>
+        <div className={classes.container}>
             <FirstCase/>
             <SecondCase/>
             <ThirtCase/>

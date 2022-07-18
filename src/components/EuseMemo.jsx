@@ -1,10 +1,13 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import axios from 'axios'
+import useStyles from './css/styles';
 
 function EuseMemo() {
     const [data, setData]= useState('');
     const [toggle, setToggle] = useState(true);
     const [count, setCount] = useState(0);
+    const classes = useStyles();
+
     
     useEffect(()=>{
         axios.get('https://jsonplaceholder.typicode.com/comments')
@@ -30,7 +33,7 @@ function EuseMemo() {
 
 const findLongestNameMemo = useMemo(()=>findLongestName(data),[count]);
     return (
-        <div>
+        <div className={classes.container}>
             <div>{findLongestNameMemo}</div>
             {/* {console.log(data)} */}
             <button onClick={()=>{setCount(count+1)}}>Count</button>
@@ -42,9 +45,9 @@ const findLongestNameMemo = useMemo(()=>findLongestName(data),[count]);
             <h3>number of count: </h3>
             {count}
            <div>
-            -useMemo is use for set funcition or menthod not re-combuting when state variable change(because when state variable change, page will reload and menthod or function will recomputing.)
-            -there are 2 type of useMemo, like useEffect, useMemo will recomputing function or menthod when indicated variable changed.
-            -in this case, longest name only show when user click on count button because function findLongestName is define to compute whenever there are a change in count variable.
+            -useMemo is use for set funcition or menthod not re-combuting when state variable change(because when state variable change, page will reload and menthod or function will recomputing.) <br/>
+            -there are 2 type of useMemo, like useEffect, useMemo will recomputing function or menthod when indicated variable changed. <br/>
+            -in this case, longest name only show when user click on count button because function findLongestName is define to compute whenever there are a change in count variable. <br/>
            </div>
         </div>
     );
