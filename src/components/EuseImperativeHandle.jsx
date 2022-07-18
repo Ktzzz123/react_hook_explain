@@ -25,10 +25,10 @@ function EuseImperativeHandle() {
      < div className='Item-Container'>
         <div>
             
-            <button onClick={()=>{console.log(buttonRef.current)}}>parent button</button>
-            <button onClick={OnClick}>hide/show</button>
+            <button id="btn" onClick={()=>{console.log(buttonRef.current)}}>parent button</button>
+            <button id="btn" onClick={OnClick}>hide/show</button>
             
-            <SmallButton ref={buttonRef}/>
+            <SmallButton id="btn" ref={buttonRef}/>
              
          </div>
          <div>

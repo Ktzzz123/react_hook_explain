@@ -19,7 +19,7 @@ function EuseState (){
             <h1>
                 {counter}
             </h1>
-            <button onClick={increasement}>increase</button>
+            <button id="btn" onClick={increasement}>increase</button>
                 
             <text>
                 <br/>

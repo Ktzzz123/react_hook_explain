@@ -14,8 +14,8 @@ function EuseRef() {
         <div className='Item-Container'>
             <div>
             <input type='text' placeholder='Ex...' ref={inputRef}></input><br/>
-            <button onClick={Clear}>Clear text in input</button><br/>
-            <button onClick = {focusText}>Focus on input</button>
+            <button id="btn" onClick={Clear}>Clear text in input</button><br/>
+            <button id="btn" onClick = {focusText}>Focus on input</button>
             </div>
             <div>
                 -use to manupulate or access DOM element

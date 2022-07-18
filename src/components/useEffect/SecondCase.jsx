@@ -1,3 +1,4 @@
+import '../../App.css'
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
@@ -28,7 +29,7 @@ function SecondCase() {
                     <input values = {data2} onChange = {e => setTitle(e.target.title)} ></input>
                     {document.title = title}
                     <br/>
-                    <button onClick={()=>{setCount2(count2+1)}}>increase</button>
+                    <button id="btn" onClick={()=>{setCount2(count2+1)}}>increase</button>
 
                 </div>
                 <div>

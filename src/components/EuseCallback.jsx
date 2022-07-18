@@ -19,7 +19,7 @@ const [data, setData]= useState('i am data');
     return (
         <div className='Item-Container'>
             <ChildComponent returnData = {returnData}></ChildComponent>
-            <button onClick={()=>{
+            <button id="btn" sonClick={()=>{
                 setToggle(!toggle)
             }}>Toggle</button>
             {toggle&&<h1>toggle</h1>}

@@ -23,7 +23,7 @@ export default function EuseReducer() {
     return (
         <div className='Item-Container'>
             <h1>{state.count}</h1>
-            <button onClick={() => dispatch({type: 'increase'})}>incease</button>
+            <button id="btn" onClick={() => dispatch({type: 'increase'})}>incease</button>
             <br/>
             <h1>
             {state.showtext?'this is an even number':'this is an odd number'}

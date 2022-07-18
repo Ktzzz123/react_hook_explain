@@ -34,8 +34,8 @@ const findLongestNameMemo = useMemo(()=>findLongestName(data),[count]);
         <div className='Item-Container'>
             <div>{findLongestNameMemo}</div>
             {/* {console.log(data)} */}
-            <button onClick={()=>{setCount(count+1)}}>Count</button>
-            <button onClick={()=>{setToggle(!toggle)}}>Toggle</button>
+            <button id="btn" onClick={()=>{setCount(count+1)}}>Count</button>
+            <button id="btn" onClick={()=>{setToggle(!toggle)}}>Toggle</button>
             <div>
             {toggle&&'Toggle'}
 

@@ -1,3 +1,4 @@
+import '../../App.css'
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
@@ -26,7 +27,7 @@ function FirstCase() {
             <br/>
             {count1}
             <br/>
-            <button onClick={()=>{
+            <button id="btn" onClick={()=>{
                 setCount1(count1+1)
             }}>increase</button>
         </div>

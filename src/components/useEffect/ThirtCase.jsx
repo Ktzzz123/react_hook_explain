@@ -1,3 +1,4 @@
+import '../../App.css'
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
@@ -19,8 +20,8 @@ export default function ThirtCase(){
                     {data3}<br/>
                     {count3}<br/>
                     {count4}<br/>
-                    <button onClick={()=>{setCount3(count3+1)}}>increase</button>
-                    <button onClick={()=>{setCount4(count4+1)}}>increase</button>
+                    <button id="btn" onClick={()=>{setCount3(count3+1)}}>increase</button>
+                    <button id="btn" onClick={()=>{setCount4(count4+1)}}>increase</button>
 
                 </div>
                 <div>
