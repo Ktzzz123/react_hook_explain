@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import '../App.css';
 
 
 function EuseState (){
@@ -12,9 +13,14 @@ function EuseState (){
 
 
     return (
-        <div>
-            {counter}
+        // <div className="Item-Contaner">
+        <div className="Item-Container">
+
+            <h1>
+                {counter}
+            </h1>
             <button onClick={increasement}>increase</button>
+                
             <text>
                 <br/>
                 - let system know that value is state variable. so each time value of that variable change, system must re-render web.

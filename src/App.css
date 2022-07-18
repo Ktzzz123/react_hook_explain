@@ -1,3 +1,53 @@
+.NavBar{
+  top:0;
+  height: 50px;
+  margin: auto;
+  background-color: black;
+}
+
+
+
+.Item-Container{
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 10px;
+  width: 70%;
+  background-color:azure;
+
+}
+.btnNavBar:hover{
+  background-color: #282c34;
+
+}
+
+.btnNavBar{
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  margin: 0 10px 0 10px;
+  border: none black;
+  background-color: black;
+  color: white;
+
+}
+#btnHome{
+  margin-left: 0;
+  float: left;
+}
+Text{
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
 .App {
   text-align: center;
 }
@@ -36,3 +86,4 @@
     transform: rotate(360deg);
   }
 }
+

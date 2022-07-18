@@ -1,3 +1,4 @@
+import '../App.css';
 import React,{useReducer} from 'react';
 
 
@@ -20,7 +21,7 @@ export default function EuseReducer() {
 
 
     return (
-        <div>
+        <div className='Item-Container'>
             <h1>{state.count}</h1>
             <button onClick={() => dispatch({type: 'increase'})}>incease</button>
             <br/>

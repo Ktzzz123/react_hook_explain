@@ -1,4 +1,5 @@
 import React,{useRef} from 'react';
+import '../App.css';
 
 function EuseRef() {
     const inputRef = useRef(null);
@@ -10,7 +11,7 @@ function EuseRef() {
     }
 
     return (
-        <>
+        <div className='Item-Container'>
             <div>
             <input type='text' placeholder='Ex...' ref={inputRef}></input><br/>
             <button onClick={Clear}>Clear text in input</button><br/>
@@ -19,7 +20,7 @@ function EuseRef() {
             <div>
                 -use to manupulate or access DOM element
             </div>
-        </>
+        </div >
   
     );
 }

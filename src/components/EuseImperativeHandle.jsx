@@ -1,6 +1,11 @@
+import '../App.css';
 import React,{useEffect, useRef} from 'react';
 import SmallButton from './nestedComponent/SmallButton';
 const ref = React.createRef();
+
+
+
+
 function EuseImperativeHandle() {
     const buttonRef = useRef(null);
     
@@ -17,7 +22,7 @@ function EuseImperativeHandle() {
 
     
     return (
-     <>
+     < div className='Item-Container'>
         <div>
             
             <button onClick={()=>{console.log(buttonRef.current)}}>parent button</button>
@@ -32,7 +37,7 @@ function EuseImperativeHandle() {
             </text>
          </div>
      
-     </>
+     </div>
     );
 }
 

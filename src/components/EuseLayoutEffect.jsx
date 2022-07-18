@@ -1,4 +1,5 @@
 import React, {  useRef, useLayoutEffect, useEffect } from 'react';
+import '../App.css';
 
 function EuseLayoutEffect() {
     const inputRef = useRef(null);
@@ -11,17 +12,17 @@ function EuseLayoutEffect() {
     },[])
 
         return (
-            <div>
+            <div className='Item-Container'>
                 <div>
                     <input ref={inputRef} value="i am the firt value" style={{width: 400, height: 50}}></input>
 
                 </div>
-                <div>
+                <text>
 
-                    -useLayoutEffect was rendered ealiest in page. it mean that it was render before useEffect
-                    -useLayoutEffect was rendered after function was render and before useEffect render
+                    -useLayoutEffect was rendered ealiest in page. it mean that it was render before useEffect<br/>
+                    -useLayoutEffect was rendered after function was render and before useEffect render<br/>    
                     -use when dev want to change value of layout of app before it acctualy print out on the screen.
-                </div>
+                </text>
             </div>
         )
     
